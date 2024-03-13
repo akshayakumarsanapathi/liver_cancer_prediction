@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            margin-top: 250px;
+            background-color: skyblue;
+        }
+        
+        h1 {
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to sentiment analysis</h1>
+    <form action="/index" method="get">
+        <button type="submit">Click here to enter your tweet</button>
+    </form>
+</body>
+</html>

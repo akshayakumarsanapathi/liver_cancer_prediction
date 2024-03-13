@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Message Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: skyblue;
+            margin: 0;
+            padding: 0;
+            margin-top: 250px;
+        }
+        
+        h1 {
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Twitter Sentiment Detection</h1>
+    <form action="/predict" method="post">
+        <input placeholder="Enter Your Message..." type="text" id="message" name="message" class="input" required>
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            margin-top: 250px;
+            background-color: skyblue;
+        }
+        
+        h1 {
+            color: black;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: black;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Result</h1>
+    <p>Prediction: {{ prediction }}</p>
+    <a href="./">Back</a>
+</body>
+</html>
